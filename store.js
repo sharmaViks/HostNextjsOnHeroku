@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import { createStore, applyMiddleware  } from 'redux';
 import thunk from 'redux-thunk';
-import launchProgramsReducer from './src/components/LaunchPrograms/redux/reducers';
+import launchProgramsReducer from './components/LaunchPrograms/redux/reducers';
 
 const spaceXApp = combineReducers({
     launchPrograms:launchProgramsReducer

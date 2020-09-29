@@ -2,11 +2,11 @@
 import React, { useEffect } from 'react';
 import LaunchProgramsContainer from '../components/LaunchPrograms/LaunchProgramsContainer';
 import { Provider } from 'react-redux';
-import store from '../../store';
+import store from '../store';
 import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import {ThemeProvider } from '@material-ui/core/styles';
-import theme from '../../theme';
+import theme from '../theme';
 
 function App() {
   useEffect(() => {

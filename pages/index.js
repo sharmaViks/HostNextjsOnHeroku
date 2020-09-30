@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import LaunchProgramsContainer from '../components/LaunchPrograms/LaunchProgramsContainer';
 import { Provider } from 'react-redux';
 import store from '../store';
-import {Html,Head} from 'next/head';
+import Head from 'next/head';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from '../theme';
@@ -16,8 +16,8 @@ function App() {
       jssStyles.parentElement.removeChild(jssStyles);
     }
   }, []);
-  return (<React.Fragment>
-    <Html lang="en">
+  return (
+    <html lang ="en">
     <Head>
       <title>SpaceX</title>
       <meta charset="UTF-8" />
@@ -32,8 +32,7 @@ function App() {
         <LaunchProgramsContainer />
       </Provider>
     </ThemeProvider>
-    </Html>
-  </React.Fragment>
+    </html>
   );
 }
 

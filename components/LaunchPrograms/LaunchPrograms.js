@@ -111,15 +111,15 @@ const LaunchPrograms = ({ all_programs, applyFilter }) => {
             filter[index]['filter_color'][index1] = "#618833";
         }
         let str = "";
-        for(let i=0;i<_selectedFilters.length;i++){
-            if(i > 0){
-                str=str+'&';
+        for (let i = 0; i < _selectedFilters.length; i++) {
+            if (i > 0) {
+                str = str + '&';
             }
-            str=str+(_selectedFilters[i]["type"] + "="+_selectedFilters[i]["value"]);
+            str = str + (_selectedFilters[i]["type"] + "=" + _selectedFilters[i]["value"]);
         }
-        console.log("str",str)
-        console.log("_selectedFilters",_selectedFilters)
-        router.push('/?'+str, undefined, { shallow: true })
+        console.log("str", str)
+        console.log("_selectedFilters", _selectedFilters)
+        router.push('/?' + str, undefined, { shallow: true })
         setFilters(filter);
         setSelectedFilters(_selectedFilters);
         applyFilter(_selectedFilters);
@@ -165,7 +165,7 @@ const LaunchPrograms = ({ all_programs, applyFilter }) => {
                                     <Grid key={program.flight_number} item md={3} xs={12} sm={6} className={programCard}>
                                         <Paper className={classes.paper}>
                                             <div style={{ backgroundColor: '#ededed', textAlign: 'center' }}>
-                                                <img src={program.links.mission_patch_small} className={classes.programImage} />
+                                                <img src={program.links.mission_patch_small} className={classes.programImage} alt={program.mission_name} />
                                             </div>
                                             <Typography variant="subtitle2" style={{ padding: 10, color: '#002884' }}>
                                                 {program.mission_name} # {program.flight_number}
@@ -195,6 +195,11 @@ const LaunchPrograms = ({ all_programs, applyFilter }) => {
                             </Grid>
                         </Grid>
                     </Grid>
+                </Grid>
+            </Grid>
+            <Grid container style={{display:'flex',textAlign:'center'}}>
+                <Grid item xs={12}>
+                   <span style={{fontWeight:'bold'}}>Developed by:</span> <span>Vikrant Sharma</span>
                 </Grid>
             </Grid>
         </div >

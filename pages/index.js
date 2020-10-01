@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import LaunchProgramsContainer from '../components/LaunchPrograms/LaunchProgramsContainer';
 import { Provider } from 'react-redux';
@@ -20,7 +19,7 @@ function App() {
     <html lang ="en">
     <Head>
       <title>SpaceX</title>
-      <meta charset="UTF-8" />
+      <meta charSet="UTF-8" />
       <meta name="description" content="SpaceX" />
       <meta name="keywords" content="SpaceX" />
       <meta name="author" content="Vikrant Sharma" />

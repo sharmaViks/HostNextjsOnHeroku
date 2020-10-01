@@ -82,5 +82,6 @@ As the API provided in the assignment fetches 100 data at a time and I am render
 ## LightHouse Report
 
 I have added the images as well as Pdf of the Lighthouse performance report for Mobile and Desktop.
-
+![Alt text](https://github.com/sharmaViks/HostNextjsOnHeroku/blob/master/public/Lighthouse_mobile.JPG,"Mobile Report")
+![Alt text](https://github.com/sharmaViks/HostNextjsOnHeroku/blob/master/public/Lighthouse_desktop.JPG,"Desktop Report")
 
